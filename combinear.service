@@ -1,0 +1,11 @@
+[Unit]
+Description=CombineAR milter
+
+[Service]
+ExecStart=/usr/bin/python2 -u /opt/combineAR/main.py
+User=combinear
+Group=mail
+UMask=0007
+
+[Install]
+WantedBy=multi-user.target
